@@ -30,6 +30,14 @@
 ~~~
 
 
+### Mixins ###
+
+Los mixins permiten definir estilos reutilizables en toda la hoja de estilos.
+Se definen con la directiva **@mixin** seguida del nombre del mixin
+
+Los mixins se incluyen en las hojas de estilos mediante la directiva **@include** seguida del nombre del mixin y opcionalmente por una lista de argumentos
+
+
 ## Estructura de proyectos ##
 
 **style.scss**
