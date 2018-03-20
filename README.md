@@ -173,6 +173,37 @@ small {
 ~~~
 
 
+### Listas y directiva EACH ###
+
+**Entrada:**
+
+~~~
+$font-weights: normal bold italic;
+
+@each $font in ($font-weights){
+  .#{$font} {
+    font-weight: $font;
+  }
+}
+~~~
+
+**Salida:**
+
+~~~
+.normal {
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-weight: italic;
+}
+~~~
+
+
 
 <br><br>
 ## Estructura de proyectos ##
