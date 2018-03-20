@@ -57,6 +57,13 @@ section{
 ~~~
 
 
+### Content ###
+
+Nos permite incluir un bloque de contenido dentro de un mixin.
+
+
+
+<br><br>
 ## Estructura de proyectos ##
 
 **style.scss**
