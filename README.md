@@ -93,6 +93,37 @@ section {
 ~~~
 
 
+### Extends / Placeholders ###
+
+Nos permite crear un fragmento de estilos que luego podamos reutilizar fácilmente en cualquier componente.
+
+**Entrada:**
+
+~~~
+%max-width{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.section{
+  @extend %max-width;
+}
+
+.container{
+  @extend %max-width;
+}
+~~~
+
+**Salida:**
+
+~~~
+.section, .container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+~~~
+
+
 
 <br><br>
 ## Estructura de proyectos ##
