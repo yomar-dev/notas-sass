@@ -61,6 +61,37 @@ section{
 
 Nos permite incluir un bloque de contenido dentro de un mixin.
 
+**Entrada:**
+
+~~~
+@mixin respond-to($width){
+  @media only screen and (min-width: $width){
+    @content;
+  }
+}
+
+section{
+  background-color: skyblue;
+  @include respond-to(800px){
+    background-color: teal;
+  }
+}
+~~~
+
+**Salida:**
+
+~~~
+section {
+  background-color: skyblue;
+}
+
+@media only screen and (min-width: 800px) {
+  section {
+    background-color: teal;
+  }
+}
+~~~
+
 
 
 <br><br>
