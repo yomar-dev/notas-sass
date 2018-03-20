@@ -35,7 +35,26 @@
 Los mixins permiten definir estilos reutilizables en toda la hoja de estilos.
 Se definen con la directiva **@mixin** seguida del nombre del mixin
 
-Los mixins se incluyen en las hojas de estilos mediante la directiva **@include** seguida del nombre del mixin y opcionalmente por una lista de argumentos
+Los mixins se incluyen en las hojas de estilos mediante la directiva **@include** seguida del nombre del mixin y opcionalmente por una lista de argumentos.
+
+**Ejemplo:**
+~~~
+@mixin max-width($max-width: 800px) {
+	max-width: $max-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container{
+	@include max-width(1200px);
+}
+
+section{
+	@include max-width(800px);
+	background-color: #333;
+	padding: 15px;
+}
+~~~
 
 
 ## Estructura de proyectos ##
