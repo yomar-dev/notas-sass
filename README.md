@@ -10,6 +10,26 @@
 `$color-font: #555;`
 
 
+### Anidaciones: ###
+
+~~~
+.btn{
+	display: inline-block;
+	color: #fff;
+	background-color: #333;
+	border-radius: 5px;
+
+	.btn__icon{
+		font-size: 24px;
+	}
+
+	.btn--info{
+		background-color: skyblue;
+	}
+}
+~~~
+
+
 ## Estructura de proyectos ##
 
 **style.scss**
