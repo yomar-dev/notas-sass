@@ -124,6 +124,55 @@ Nos permite crear un fragmento de estilos que luego podamos reutilizar fácilmen
 ~~~
 
 
+### Funciones ###
+
+**Entrada:**
+
+~~~
+@function suma($num-uno, $num-dos){
+  @return $num-uno + $num-dos;
+}
+
+.div{
+  padding: suma(12, 6);
+}
+
+
+$fs: (
+  big: 24px,
+  normal: 16px,
+  small: 14px,
+  x-small: 12px
+);
+
+p{
+  font-size: map-get($fs, normal);
+}
+
+small{
+  color: #333;
+  font-size: map-get($fs, small);
+}
+~~~
+
+**Salida:**
+
+~~~
+.div {
+  padding: 18;
+}
+
+p {
+  font-size: 16px;
+}
+
+small {
+  color: #333;
+  font-size: 14px;
+}
+~~~
+
+
 
 <br><br>
 ## Estructura de proyectos ##
