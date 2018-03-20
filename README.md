@@ -179,5 +179,8 @@ $buttonbackgroundcolor: $color-brand
 <br><br><br>
 ### Enlaces de interes ###
 
+[SASS - Documentación Oficial](https://sass-lang.com/) <br>
+[SASS Functions](http://sass-lang.com/documentation/Sass/Script/Functions.html) <br>
 [BEM](http://getbem.com/introduction/) <br>
 [SASS Meister](https://www.sassmeister.com/) <br>
+[Funciones nativas de SASS](https://styde.net/lista-completa-de-funciones-nativas-de-sass/) <br>
