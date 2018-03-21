@@ -239,6 +239,34 @@ $font-weights: normal bold italic;
 ~~~
 
 
+### Condicionales ###
+
+**Entrada:**
+
+~~~
+$background: black;
+
+@if $background == black{
+  p{
+    color: white;
+  }
+}
+@else{
+  p{
+    color: black;
+  }
+}
+~~~
+
+**Salida:**
+
+~~~
+p {
+  color: white;
+}
+~~~
+
+
 
 <br><br>
 ## Estructura de proyectos ##
