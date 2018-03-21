@@ -204,6 +204,41 @@ $font-weights: normal bold italic;
 ~~~
 
 
+### Ciclo FOR ###
+
+**Entrada:**
+
+~~~
+@for $i from 1 to 5{
+  .class-#{$i}{
+    &:before{
+      content: "#{$i}";
+    }
+  }
+}
+~~~
+
+**Salida:**
+
+~~~
+.class-1:before {
+  content: "1";
+}
+
+.class-2:before {
+  content: "2";
+}
+
+.class-3:before {
+  content: "3";
+}
+
+.class-4:before {
+  content: "4";
+}
+~~~
+
+
 
 <br><br>
 ## Estructura de proyectos ##
